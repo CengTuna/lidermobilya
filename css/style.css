@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    background-color: skyblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.navbar ul{
+ display: flex;
+    list-style-type: circle;
+}
+.navbar ul li{
+    margin: 20px;
+    font-weight: bold;
+
+}
+.navbar ul li a{
+    color: darkgreen;
+    text-decoration: none;
+
+}
+.navbar ul li a:hover{
+    color: chartreuse;
+}
+#anasayfa{
+    background-color: bisque;
+    height: 400px;
+    width: 1480px;
+   background-image: url("resimler/LİDERMOBİLYA3.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#anasayfa .main{
+    text-align: center;
+}
+#anasayfa .main h1{
+    font-size: 35px;
+} 
+#anasayfa img{
+    width: 1480;
+    height: 400pz;
+}
+#hakkımızda{
+    display: flex;
+    flex-direction: column;
+    background-color:blanchedalmond;
+    font-style: italic;
+    font: optional;  
+}
+#hakkımızda .h1{
+   text-align: center;
+   padding: 20px;
+   font-size: 25px;
+}
+
+#hakkımızda .about-img{
+    display: flex;
+    padding-left: 80px;
+    margin: 35;
+}
+#hakkımızda .about-img img{
+    width: 500px; 
+    height: 730px;
+    margin-right: 25px;
+}
+#hakkımızda .about-img .about-text{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+#hakkımızda .about-img .about-text p{
+    size: 5px;
+    font-style: italic;
+    font-weight: bold;
+}
+#hizmetlerimiz{
+    display: flex; 
+    flex-direction: column;
+}
+#hizmetlerimiz .h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+#hizmetlerimiz .row{
+    display: flex;
+}
+#hizmetlerimiz .row .box{
+    border:2px solid black;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 15px;
+    width:  300px;
+    height: 450px;
+    margin: auto;
+    border-radius: 20px;
+
+}
+#hizmetlerimiz .row .box img{
+    width: 60px;
+    height:  40px;
+}
+.bağlantılar{
+    margin: 10px;
+    padding: 10px;
+}
+.bağlantılar .bağlantı{
+    display: flex;
+    background-color: skyblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.h5{
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    background-color: tomato;
+}
+#iletişim{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+#iletişim .h3{
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+#iletişim .iletişim{
+    background-color:powderblue;
+}
+#iletişim .iletişim p{
+    max-width: 100%;
+    padding: 30px;
+    padding-left: 2%;
+
+}
+#yaz{
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    padding: 10px;
+    margin-top: 0px;
+}
+#yaz .h4{
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    width: 40%;
+    margin: 15px;
+    padding: 12px;
+    outline: none;
+    border: none;
+}
+textarea{
+    width: 40%;
+    margin: 15px;
+    padding: 12px;
+    outline: none;
+    border: none;
+}
+#gönder{
+    width: 10%;
+    margin: 10px;
+
+}
+.footer{
+    background-color: darkgray;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+}
+@media screen and (max-width:920px) {
+    .navbar{
+        flex-direction: column;
+    }
+    #about .about-img{
+        flex-direction: column;
+        align-items: center;
+    }
+    #about .about-img img{
+        width: 300px;
+        height: 400px;
+    }
+    #about .about-img .about-text h2{
+        text-align: center;
+        padding: 10px;
+    }
+    #hizmetlerimiz .row{
+        flex-direction: column;
+    }
+    #hizmetlerimiz .row .box{
+        width: 60%;
+        height: 50%;
+        margin-top: 20px;
+    }
+    input{
+        width: 60%;
+    }
+    textarea{
+        width: 60%;
+    }
+    #gönder{
+        width: 40%;
+    }
+}
